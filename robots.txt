@@ -1,0 +1,10 @@
+# ==========================================================
+# LUCENA SIN CUCARACHAS
+# robots.txt
+# ==========================================================
+
+User-agent: *
+
+Allow: /
+
+Sitemap: https://lucenasincucarachas.github.io/lucena-sin-cucarachas/

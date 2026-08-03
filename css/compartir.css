@@ -1,0 +1,53 @@
+/* ======================================================
+   BARRA DE COMPARTIR
+====================================================== */
+
+.compartir-redes{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:14px;
+
+    margin-top:35px;
+
+}
+
+.compartir-redes .btn{
+
+    min-width:180px;
+
+}
+
+.btn-icono{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    border:none;
+
+    cursor:pointer;
+
+    font:inherit;
+
+}
+
+.btn-icono svg{
+
+    width:20px;
+
+    height:20px;
+
+    flex-shrink:0;
+
+    fill:currentColor;
+
+}

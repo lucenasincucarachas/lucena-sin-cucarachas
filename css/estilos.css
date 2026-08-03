@@ -2817,3 +2817,14 @@ body{
     cursor:pointer;
 
 }
+.contador-actualizado{
+
+    margin-top:20px;
+
+    font-size:.9rem;
+
+    opacity:.75;
+
+    text-align:center;
+
+}

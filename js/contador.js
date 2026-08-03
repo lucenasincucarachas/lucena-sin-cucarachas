@@ -1,221 +1,31 @@
-/*==========================================================
-    LUCENA SIN CUCARACHAS
-    CONTADOR.JS
-==========================================================*/
+const URL_CONTADOR =
+"https://script.google.com/macros/s/AKfycbxec01HNqgwCn8auC-x5w7YxZGXRvZloU3_XgM9yyGyflEZGTsh6u44IIyJChPUrdxrfA/exec";
 
-"use strict";
-
-/*==========================================================
-    CONFIGURACIÓN
-==========================================================*/
-
-const CONFIG={
-
-    valorInicial:0,
-
-    duracion:1800,
-
-    separador:true,
-
-    actualizarCada:300000
-
-};
-
-/*==========================================================
-    ELEMENTOS
-==========================================================*/
-
-const contador=document.getElementById("contador");
-
-if(!contador){
-
-    console.warn("No existe #contador");
-
-}
-
-/*==========================================================
-    FORMATO
-==========================================================*/
-
-function formatear(numero){
-
-    if(!CONFIG.separador){
-
-        return numero.toString();
-
-    }
-
-    return numero.toLocaleString("es-ES");
-
-}
-
-/*==========================================================
-    ANIMACIÓN
-==========================================================*/
-
-function animar(desde,hasta){
-
-    if(!contador){
-
-        return;
-
-    }
-
-    const inicio=performance.now();
-
-    function frame(tiempo){
-
-        const progreso=Math.min(
-
-            (tiempo-inicio)/CONFIG.duracion,
-
-            1
-
-        );
-
-        const valor=Math.floor(
-
-            desde+
-
-            (hasta-desde)*progreso
-
-        );
-
-        contador.textContent=formatear(valor);
-
-        if(progreso<1){
-
-            requestAnimationFrame(frame);
-
-        }
-
-    }
-
-    requestAnimationFrame(frame);
-
-}
-
-/*==========================================================
-    ESTABLECER VALOR
-==========================================================*/
-
-let valorActual=CONFIG.valorInicial;
-
-function establecerContador(valor){
-
-    valor=Math.max(0,Number(valor)||0);
-
-    animar(valorActual,valor);
-
-    valorActual=valor;
-
-}
-
-/*==========================================================
-    API FUTURA
-==========================================================*/
-
-async function obtenerFirmas(){
-
-    /*
-    Sustituir por la API definitiva.
-
-    Debe devolver únicamente un número.
-
-    Ejemplo:
-
-    return fetch(...)
-        .then(r=>r.json())
-        .then(d=>d.total);
-
-    */
-
-    return CONFIG.valorInicial;
-
-}
-
-/*==========================================================
-    ACTUALIZACIÓN
-==========================================================*/
-
-async function actualizar(){
+async function actualizarContador(){
 
     try{
 
-        const firmas=
+        const respuesta = await fetch(URL_CONTADOR);
 
-            await obtenerFirmas();
+        const datos = await respuesta.json();
 
-        establecerContador(firmas);
+        const contador = document.getElementById("contador");
+
+        if(contador){
+
+            contador.textContent =
+                Number(datos.firmas).toLocaleString("es-ES");
+
+        }
 
     }
 
     catch(error){
 
-        console.error(
-
-            "Error actualizando contador",
-
-            error
-
-        );
+        console.error("No se pudo actualizar el contador:", error);
 
     }
 
 }
 
-/*==========================================================
-    OBSERVER
-==========================================================*/
-
-if(contador){
-
-    const observer=new IntersectionObserver(
-
-        entradas=>{
-
-            entradas.forEach(entrada=>{
-
-                if(entrada.isIntersecting){
-
-                    actualizar();
-
-                    observer.disconnect();
-
-                }
-
-            });
-
-        },
-
-        {
-
-            threshold:.5
-
-        }
-
-    );
-
-    observer.observe(contador);
-
-}
-
-/*==========================================================
-    AUTOREFRESH
-==========================================================*/
-
-setInterval(
-
-    actualizar,
-
-    CONFIG.actualizarCada
-
-);
-
-/*==========================================================
-    ACCESO GLOBAL
-==========================================================*/
-
-window.actualizarFirmas=
-
-establecerContador;
+document.addEventListener("DOMContentLoaded", actualizarContador);

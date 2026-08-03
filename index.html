@@ -1415,33 +1415,95 @@
 
             </p>
 
-            <div class="cta-botones">
+            <div class="cta-botones compartir-redes">
 
-    		<a href="#firmar"
-      		 class="btn btn-principal">
+    <a href="#firmar"
+       class="btn btn-principal">
 
-      		  ✍️ Firmar ahora
+        ✍️ Firmar ahora
 
-    	</a>
+    </a>
 
-    	<a href="https://wa.me/?text=Apoya%20la%20iniciativa%20vecinal%20para%20solicitar%20un%20Plan%20Integral%20de%20Control%20de%20Plagas%20en%20Lucena.%20Firma%20aquí:%20https://lucenasincucarachas.github.io/lucena-sin-cucarachas/"
-       class="btn btn-principal"
-       target="_blank"
-       rel="noopener noreferrer">
+    <button type="button"
+            class="btn btn-secundario btn-icono"
+            onclick="compartirWhatsApp()">
 
-        📲 Compartir por WhatsApp
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+            <path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2.1 7L3 29l6.4-2c2 1.1 4.2 1.7 6.6 1.7 7.2 0 13-5.7 13-12.9S23.2 3 16 3zm7.6 18.2c-.3.8-1.8 1.5-2.5 1.6-.6.1-1.3.2-4.3-1-3.7-1.6-6.1-5.3-6.3-5.5-.2-.3-1.5-2-.9-3.8.3-.9 1-1.4 1.3-1.6.3-.2.6-.2.8-.2h.6c.2 0 .5 0 .7.5.3.7 1 2.3 1.1 2.5.1.2.1.4 0 .6-.1.2-.2.4-.4.6l-.5.6c-.2.2-.3.4-.1.7.2.3.8 1.3 1.8 2.1 1.2 1 2.1 1.3 2.5 1.5.3.1.5.1.7-.1.2-.2.8-.9 1-.1.2.3.5.3.8.2.3-.1 1.8-.8 2.1-1 .3-.2.5-.3.6-.5.1-.2.1-1-.2-1.8z"/>
+        </svg>
 
-   	</a>
+        <span>WhatsApp</span>
 
-    	<a href="#inicio"
-       	class="btn btn-secundario">
+    </button>
+
+    <button type="button"
+            class="btn btn-secundario btn-icono"
+            onclick="compartirFacebook()">
+
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M22 12A10 10 0 1 0 10.4 21.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.5V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12"/>
+        </svg>
+
+        <span>Facebook</span>
+
+    </button>
+
+    <button type="button"
+            class="btn btn-secundario btn-icono"
+            onclick="compartirTelegram()">
+
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M9.9 15.6 9.5 20c.6 0 .8-.3 1.1-.6l2.6-2.5 5.4 4c1 .5 1.7.2 2-.9L24 4.2c.4-1.7-.6-2.4-1.6-2L1.6 10.3c-1.6.6-1.6 1.5-.3 1.9l5.3 1.7L19 6.2c.6-.4 1.2-.2.7.3"/>
+        </svg>
+
+        <span>Telegram</span>
+
+    </button>
+
+    <button type="button"
+            class="btn btn-secundario btn-icono"
+            onclick="compartirX()">
+
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M18.9 2H22l-6.8 7.8L23 22h-6.1l-4.8-6.3L6.6 22H3.5l7.2-8.2L1 2h6.3l4.3 5.7z"/>
+        </svg>
+
+        <span>X</span>
+
+    </button>
+
+    <button type="button"
+            class="btn btn-secundario btn-icono"
+            onclick="copiarEnlace()">
+
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M3.9 12a5 5 0 0 1 5-5h3v2h-3a3 3 0 0 0 0 6h3v2h-3a5 5 0 0 1-5-5zm7.1 1h2v-2h-2zm4.1-6h-3v2h3a3 3 0 0 1 0 6h-3v2h3a5 5 0 0 0 0-10z"/>
+        </svg>
+
+        <span>Copiar enlace</span>
+
+    </button>
+
+    <button type="button"
+            class="btn btn-secundario btn-icono"
+            onclick="compartir()">
+
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M18 16a3 3 0 0 0-2.4 1.2l-6.4-3.2a3.2 3.2 0 0 0 0-2l6.4-3.2A3 3 0 1 0 15 7a2.7 2.7 0 0 0 .1.7L8.7 10.9a3 3 0 1 0 0 2.2l6.4 3.2a2.7 2.7 0 0 0-.1.7 3 3 0 1 0 3-3z"/>
+        </svg>
+
+        <span>Compartir</span>
+
+    </button>
+
+    <a href="#inicio"
+       class="btn btn-secundario">
 
         ⬆️ Volver arriba
 
-    	</a>
+    </a>
 
-	</div>
-
+</div>
 
         </div>
 

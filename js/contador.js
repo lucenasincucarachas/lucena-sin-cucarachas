@@ -18,32 +18,12 @@ async function actualizarContador() {
 
         }
 
-        const total = document.getElementById("total-respuestas");
-
-        if (total) {
-
-            total.textContent =
-                Number(datos.totalRespuestas).toLocaleString("es-ES");
-
-        }
-
-        const duplicados = document.getElementById("duplicados");
-
-        if (duplicados) {
-
-            duplicados.textContent =
-                Number(datos.duplicados).toLocaleString("es-ES");
-
-        }
-
         const actualizacion = document.getElementById("actualizacion");
 
         if (actualizacion) {
 
-            const fecha = new Date(datos.actualizado);
-
             actualizacion.textContent =
-                fecha.toLocaleString("es-ES");
+                new Date(datos.actualizado).toLocaleString("es-ES");
 
         }
 
@@ -51,7 +31,7 @@ async function actualizarContador() {
 
     catch (error) {
 
-        console.error(error);
+        console.error("Error al actualizar contador:", error);
 
     }
 

@@ -2791,3 +2791,29 @@ body{
 }
 
 }
+
+/* ======================================================
+   COMPARTIR EN REDES
+====================================================== */
+
+.compartir-redes{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:14px;
+
+    margin-top:30px;
+
+}
+
+.compartir-redes .btn{
+
+    min-width:180px;
+
+    cursor:pointer;
+
+}

@@ -69,7 +69,7 @@ function compartirX() {
 
     window.open(
 
-        "https://twitter.com/intent/tweet?url=" +
+        "https://x.com/intent/post?url=" +
         encodeURIComponent(URL_WEB) +
         "&text=" +
         encodeURIComponent(TEXTO),

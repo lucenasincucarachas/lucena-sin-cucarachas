@@ -76,7 +76,7 @@ async function actualizarContador(intento = 1) {
         // ==========================
 
         const contadorCalles =
-            document.getElementById("contador-calles");
+            document.getElementById("calles");
 
         if (contadorCalles) {
             contadorCalles.textContent =

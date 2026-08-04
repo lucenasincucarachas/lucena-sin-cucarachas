@@ -1,5 +1,5 @@
 const URL_CONTADOR =
-    "https://script.google.com/macros/s/AKfycbxec01HNqgwCn8auC-x5w7YxZGXRvZloU3_XgM9yyGyflEZGTsh6u44IIyJChPUrdxrfA/exec";
+    "https://script.google.com/macros/s/AKfycbw5WkIXIrUMQpumOqyPLiXlvBbDayhl0kGrHFMSar98CxzUzEkMi0WtQ91qipLRbYTelA/exec";
 
 const INTERVALO_ACTUALIZACION = 30000; // 30 segundos
 const MAX_REINTENTOS = 3;

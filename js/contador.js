@@ -76,12 +76,12 @@ async function actualizarContador(intento = 1) {
         // ==========================
 
         const contadorCalles =
-            document.getElementById("calles");
+    document.getElementById("calles");
 
-        if (contadorCalles) {
-            contadorCalles.textContent =
-                calles.toLocaleString("es-ES");
-        }
+if (contadorCalles) {
+    contadorCalles.textContent =
+        calles.toLocaleString("es-ES");
+}
 
         // ==========================
         // COMUNICADOS PREVIOS
@@ -147,8 +147,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }, INTERVALO_ACTUALIZACION);
 
 });
-const calles = document.getElementById("calles");
-
-if (calles && datos.CALLES_UNICAS !== undefined) {
-    calles.textContent = Number(datos.CALLES_UNICAS).toLocaleString("es-ES");
-}

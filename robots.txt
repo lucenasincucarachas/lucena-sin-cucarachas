@@ -4,7 +4,6 @@
 # ==========================================================
 
 User-agent: *
-
 Allow: /
 
-Sitemap: https://lucenasincucarachas.github.io/lucena-sin-cucarachas/
+Sitemap: https://lucenasincucarachas.github.io/lucena-sin-cucarachas/sitemap.xml

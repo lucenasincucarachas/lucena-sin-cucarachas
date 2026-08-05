@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 
-
 <head>
 
     <!-- =====================================================
@@ -22,25 +21,8 @@
     <meta name="color-scheme"
           content="light">
 
-<!-- ==========================
-     ICONOS DEL SITIO
-========================== -->
-
-<link rel="icon" href="assets/icons/favicon.ico" sizes="any">
-
-<link rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/icons/favicon-32.png">
-
-<link rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/icons/favicon-16.png">
-
-<link rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/icons/apple-touch-icon.png">
+    <meta name="format-detection"
+          content="telephone=no">
 
     <!-- =====================================================
          SEO
@@ -68,53 +50,76 @@
           href="https://lucenasincucarachas.github.io/lucena-sin-cucarachas/">
 
     <!-- =====================================================
-     OPEN GRAPH
-===================================================== -->
+         OPEN GRAPH
+    ====================================================== -->
 
-<meta property="og:type" content="website">
+    <meta property="og:type"
+          content="website">
 
-<meta property="og:title"
-      content="Lucena sin Cucarachas">
+    <meta property="og:locale"
+          content="es_ES">
 
-<meta property="og:description"
-      content="Apoya la iniciativa vecinal para solicitar un Plan Integral de Control de Plagas en Lucena.">
+    <meta property="og:site_name"
+          content="Lucena sin Cucarachas">
 
-<meta property="og:url"
-      content="https://lucenasincucarachas.github.io/lucena-sin-cucarachas/">
+    <meta property="og:title"
+          content="Lucena sin Cucarachas">
 
-<meta property="og:image"
-      content="https://lucenasincucarachas.github.io/lucena-sin-cucarachas/assets/img/og.jpg">
+    <meta property="og:description"
+          content="Apoya la iniciativa vecinal para solicitar un Plan Integral de Control de Plagas en Lucena.">
 
-<meta property="og:image:width"
-      content="1200">
+    <meta property="og:url"
+          content="https://lucenasincucarachas.github.io/lucena-sin-cucarachas/">
 
-<meta property="og:image:height"
-      content="630">
+    <meta property="og:image"
+          content="https://lucenasincucarachas.github.io/lucena-sin-cucarachas/assets/img/og.jpg">
 
-<meta property="og:image:type"
-      content="image/jpeg">
+    <meta property="og:image:width"
+          content="1200">
 
-<meta property="og:site_name"
-      content="Lucena sin Cucarachas">
+    <meta property="og:image:height"
+          content="630">
 
-<meta property="og:locale"
-      content="es_ES">
+    <meta property="og:image:type"
+          content="image/jpeg">
 
-<!-- =====================================================
-     TWITTER / X
-===================================================== -->
+    <!-- =====================================================
+         TWITTER / X
+    ====================================================== -->
 
-<meta name="twitter:card"
-      content="summary_large_image">
+    <meta name="twitter:card"
+          content="summary_large_image">
 
-<meta name="twitter:title"
-      content="Lucena sin Cucarachas">
+    <meta name="twitter:title"
+          content="Lucena sin Cucarachas">
 
-<meta name="twitter:description"
-      content="Apoya la iniciativa vecinal para solicitar un Plan Integral de Control de Plagas en Lucena.">
+    <meta name="twitter:description"
+          content="Apoya la iniciativa vecinal para solicitar un Plan Integral de Control de Plagas en Lucena.">
 
-<meta name="twitter:image"
-      content="https://lucenasincucarachas.github.io/lucena-sin-cucarachas/assets/img/og.jpg">
+    <meta name="twitter:image"
+          content="https://lucenasincucarachas.github.io/lucena-sin-cucarachas/assets/img/og.jpg">
+
+    <!-- =====================================================
+         FAVICON
+    ====================================================== -->
+
+    <link rel="icon"
+          href="assets/icons/favicon.ico"
+          sizes="any">
+
+    <link rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="assets/icons/favicon-32.png">
+
+    <link rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="assets/icons/favicon-16.png">
+
+    <link rel="apple-touch-icon"
+          sizes="180x180"
+          href="assets/icons/apple-touch-icon.png">
 
     <!-- =====================================================
          GOOGLE FONTS
@@ -143,6 +148,21 @@
     <link rel="stylesheet"
           href="css/responsive.css">
 
+    <!-- =====================================================
+         DATOS ESTRUCTURADOS
+    ====================================================== -->
+
+    <script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"Lucena sin Cucarachas",
+  "url":"https://lucenasincucarachas.github.io/lucena-sin-cucarachas/",
+  "inLanguage":"es",
+  "description":"Iniciativa ciudadana para solicitar un Plan Integral de Control de Plagas en Lucena."
+}
+</script>
+
 </head>
 
 <body>
@@ -159,10 +179,16 @@
     <div class="contenedor">
 
         <a href="#inicio"
-           class="logo">
+           class="logo"
+           aria-label="Ir al inicio">
 
-            <img src="assets/logo/logo.svg"
-                 alt="Logotipo Lucena sin Cucarachas">
+            <img
+                src="assets/logo/logo.svg"
+                alt="Logotipo de Lucena sin Cucarachas"
+                width="64"
+                height="64"
+                loading="eager"
+                decoding="async">
 
             <div>
 
@@ -184,14 +210,18 @@
 
         <button
             class="menu-movil"
-            aria-label="Abrir menú"
+            type="button"
+            aria-label="Abrir menú principal"
+            aria-controls="menu-principal"
             aria-expanded="false">
 
             ☰
 
         </button>
 
-        <nav aria-label="Menú principal">
+        <nav
+            id="menu-principal"
+            aria-label="Menú principal">
 
             <ul>
 
@@ -205,8 +235,9 @@
 
                 <li>
 
-                    <a class="boton-menu"
-                       href="#firmar">
+                    <a
+                        href="#firmar"
+                        class="boton-menu">
 
                         APOYAR
 
@@ -223,13 +254,23 @@
 </header>
 
 <main id="contenido">
+<!-- =====================================================
+     HERO
+===================================================== -->
 
 <section id="inicio"
-         class="hero">
+         class="hero"
+         aria-labelledby="hero-titulo">
 
-    <div class="hero-fondo"></div>
+    <div class="hero-fondo"
+         aria-hidden="true"></div>
 
     <div class="contenedor hero-grid">
+
+        <!-- ==========================================
+             CONTENIDO
+        ========================================== -->
+
         <div class="hero-contenido">
 
             <span class="hero-etiqueta">
@@ -238,22 +279,31 @@
 
             </span>
 
-            <h1>
+            <h1 id="hero-titulo">
 
                 Unidos para conseguir un
-                <span>Plan Integral de Control de Plagas</span>
+
+                <span>
+
+                    Plan Integral de Control de Plagas
+
+                </span>
 
             </h1>
 
             <p class="hero-descripcion">
 
-                Esta iniciativa nace con el objetivo de solicitar al Ayuntamiento de
-                Lucena la implantación de un programa permanente de prevención,
-                seguimiento y control de cucarachas en el municipio, especialmente
-                en las zonas donde numerosos vecinos vienen comunicando incidencias
-                de forma reiterada.
+                Esta iniciativa nace con el objetivo de solicitar al
+                Ayuntamiento de Lucena la implantación de un programa
+                permanente de prevención, seguimiento y control de
+                cucarachas, especialmente en aquellas zonas donde los
+                vecinos comunican incidencias de forma reiterada.
 
             </p>
+
+            <!-- ======================================
+                 BOTONES
+            ======================================= -->
 
             <div class="hero-botones">
 
@@ -273,42 +323,77 @@
 
             </div>
 
-            <div class="hero-datos">
+            <!-- ======================================
+                 ESTADÍSTICAS
+            ======================================= -->
 
-    <article>
+            <div class="hero-datos"
+                 aria-label="Datos de la campaña">
 
-        <strong id="contador">0</strong>
+                <article class="hero-stat">
 
-        <span>Apoyos recibidos</span>
+                    <strong id="contador">
 
-    </article>
+                        0
 
-    <article>
+                    </strong>
 
-        <strong id="calles">0</strong>
+                    <span>
 
-        <span>Calles afectadas</span>
+                        Apoyos recibidos
 
-    </article>
+                    </span>
 
-</div>
+                </article>
 
-<p class="contador-actualizado">
+                <article class="hero-stat">
 
-    Actualizado automáticamente:
+                    <strong id="calles">
 
-    <strong id="actualizacion">--</strong>
+                        0
 
-</p>
+                    </strong>
+
+                    <span>
+
+                        Calles afectadas
+
+                    </span>
+
+                </article>
+
+            </div>
+
+            <p class="contador-actualizado">
+
+                Actualizado automáticamente:
+
+                <strong id="actualizacion">
+
+                    --
+
+                </strong>
+
+            </p>
 
         </div>
 
-        <div class="hero-imagen">
+        <!-- ==========================================
+             IMAGEN
+        ========================================== -->
 
-            <img src="assets/img/hero.webp"
-                 alt="Skyline de Lucena">
+        <figure class="hero-imagen">
 
-        </div>
+            <img
+                src="assets/img/hero.webp"
+        	alt="Vista panorámica de Lucena"
+	        width="700"
+        	height="700"
+	        loading="eager"
+        	fetchpriority="high"
+	        decoding="async">
+
+        </figure>
 
     </div>
 
@@ -319,7 +404,8 @@
 ===================================================== -->
 
 <section id="problema"
-         class="seccion">
+         class="seccion"
+         aria-labelledby="problema-titulo">
 
     <div class="contenedor">
 
@@ -331,7 +417,7 @@
 
             </span>
 
-            <h2>
+            <h2 id="problema-titulo">
 
                 Una situación que preocupa a numerosos vecinos
 
@@ -339,11 +425,12 @@
 
             <p>
 
-                En diferentes zonas de Lucena, especialmente en el casco urbano,
-                numerosos vecinos comunican de forma recurrente la presencia de
-                cucarachas en viviendas, patios, cocheras y espacios comunitarios.
-                El objetivo de esta iniciativa es trasladar una petición conjunta
-                para reforzar la prevención y la planificación de las actuaciones
+                En diferentes zonas de Lucena, especialmente en el casco
+                urbano, numerosos vecinos comunican de forma recurrente la
+                presencia de cucarachas en viviendas, patios, garajes y
+                espacios comunitarios. El objetivo de esta iniciativa es
+                trasladar una petición conjunta para reforzar la
+                prevención y la planificación de las actuaciones
                 municipales.
 
             </p>
@@ -354,7 +441,8 @@
 
             <article class="card">
 
-                <div class="card-icono">
+                <div class="card-icono"
+                     aria-hidden="true">
 
                     🏠
 
@@ -368,8 +456,9 @@
 
                 <p>
 
-                    La presencia de cucarachas afecta a viviendas particulares,
-                    patios interiores, garajes y comunidades de propietarios.
+                    La presencia de cucarachas afecta a viviendas
+                    particulares, patios interiores, garajes y
+                    comunidades de propietarios.
 
                 </p>
 
@@ -377,7 +466,8 @@
 
             <article class="card">
 
-                <div class="card-icono">
+                <div class="card-icono"
+                     aria-hidden="true">
 
                     📅
 
@@ -391,8 +481,9 @@
 
                 <p>
 
-                    Muchos vecinos indican que, tras tratamientos puntuales,
-                    las incidencias vuelven a producirse con el paso del tiempo.
+                    Tras actuaciones puntuales, numerosos vecinos indican
+                    que las incidencias vuelven a repetirse con el paso
+                    del tiempo.
 
                 </p>
 
@@ -400,7 +491,8 @@
 
             <article class="card">
 
-                <div class="card-icono">
+                <div class="card-icono"
+                     aria-hidden="true">
 
                     🤝
 
@@ -414,8 +506,9 @@
 
                 <p>
 
-                    La iniciativa pretende canalizar una petición colectiva,
-                    respetuosa y constructiva para mejorar la gestión preventiva.
+                    La iniciativa pretende canalizar una petición
+                    colectiva, respetuosa y constructiva para mejorar la
+                    gestión preventiva del control de plagas.
 
                 </p>
 
@@ -426,13 +519,13 @@
     </div>
 
 </section>
-
 <!-- =====================================================
      LA PROPUESTA
 ===================================================== -->
 
 <section id="propuesta"
-         class="seccion seccion-verde">
+         class="seccion seccion-verde"
+         aria-labelledby="propuesta-titulo">
 
     <div class="contenedor">
 
@@ -444,7 +537,7 @@
 
             </span>
 
-            <h2>
+            <h2 id="propuesta-titulo">
 
                 ¿Qué solicitamos?
 
@@ -452,9 +545,10 @@
 
             <p>
 
-                El objetivo no es criticar actuaciones concretas, sino solicitar
-                la implantación de un sistema de control más planificado,
-                preventivo y transparente.
+                El objetivo no es criticar actuaciones concretas, sino
+                solicitar la implantación de un sistema de control más
+                planificado, preventivo y transparente que permita
+                mejorar la gestión municipal de las plagas.
 
             </p>
 
@@ -464,7 +558,11 @@
 
             <article>
 
-                <span>01</span>
+                <span aria-hidden="true">
+
+                    01
+
+                </span>
 
                 <h3>
 
@@ -474,7 +572,8 @@
 
                 <p>
 
-                    Programación estable durante todo el año.
+                    Implantación de una programación estable durante
+                    todo el año basada en actuaciones preventivas.
 
                 </p>
 
@@ -482,7 +581,11 @@
 
             <article>
 
-                <span>02</span>
+                <span aria-hidden="true">
+
+                    02
+
+                </span>
 
                 <h3>
 
@@ -492,7 +595,8 @@
 
                 <p>
 
-                    Actuaciones preventivas antes de la aparición masiva.
+                    Actuar antes de que aparezcan grandes focos de
+                    infestación mediante tratamientos periódicos.
 
                 </p>
 
@@ -500,7 +604,11 @@
 
             <article>
 
-                <span>03</span>
+                <span aria-hidden="true">
+
+                    03
+
+                </span>
 
                 <h3>
 
@@ -510,7 +618,8 @@
 
                 <p>
 
-                    Evaluación periódica de los resultados obtenidos.
+                    Evaluación continua de los resultados obtenidos para
+                    adaptar las actuaciones cuando sea necesario.
 
                 </p>
 
@@ -518,7 +627,11 @@
 
             <article>
 
-                <span>04</span>
+                <span aria-hidden="true">
+
+                    04
+
+                </span>
 
                 <h3>
 
@@ -528,7 +641,8 @@
 
                 <p>
 
-                    Comunicación transparente con los vecinos.
+                    Comunicación transparente con la ciudadanía sobre
+                    campañas, tratamientos y actuaciones realizadas.
 
                 </p>
 
@@ -536,17 +650,22 @@
 
             <article>
 
-                <span>05</span>
+                <span aria-hidden="true">
+
+                    05
+
+                </span>
 
                 <h3>
 
-                    Respuesta oficial
+                    Respuesta institucional
 
                 </h3>
 
                 <p>
 
-                    Contestación institucional a la solicitud presentada.
+                    Solicitar una respuesta oficial sobre la propuesta
+                    presentada y las medidas que puedan adoptarse.
 
                 </p>
 
@@ -557,12 +676,14 @@
     </div>
 
 </section>
+
 <!-- =====================================================
-     ¿POR QUÉ APOYAR ESTA INICIATIVA?
+     ¿POR QUÉ APOYAR?
 ===================================================== -->
 
 <section id="apoyar"
-         class="seccion">
+         class="seccion"
+         aria-labelledby="apoyar-titulo">
 
     <div class="contenedor">
 
@@ -574,7 +695,7 @@
 
             </span>
 
-            <h2>
+            <h2 id="apoyar-titulo">
 
                 Una petición colectiva tiene más fuerza
 
@@ -582,10 +703,11 @@
 
             <p>
 
-                El objetivo de esta campaña es demostrar que existe un interés
-                real por parte de los vecinos para que se estudie la implantación
-                de un Plan Integral de Control de Plagas. Cada apoyo suma y ayuda
-                a trasladar una petición con mayor representatividad.
+                El objetivo de esta campaña es demostrar que existe un
+                interés real por parte de los vecinos para que se estudie
+                la implantación de un Plan Integral de Control de
+                Plagas. Cada apoyo suma y ayuda a trasladar una petición
+                con mayor representatividad.
 
             </p>
 
@@ -595,7 +717,8 @@
 
             <article class="card">
 
-                <div class="card-icono">
+                <div class="card-icono"
+                     aria-hidden="true">
 
                     ✍️
 
@@ -609,8 +732,8 @@
 
                 <p>
 
-                    Dedicarás menos de un minuto y tu apoyo quedará registrado
-                    para acompañar la solicitud.
+                    Completar el formulario solo requiere unos minutos y
+                    permitirá incorporar tu apoyo a la iniciativa.
 
                 </p>
 
@@ -618,7 +741,8 @@
 
             <article class="card">
 
-                <div class="card-icono">
+                <div class="card-icono"
+                     aria-hidden="true">
 
                     📲
 
@@ -632,8 +756,9 @@
 
                 <p>
 
-                    Envía el enlace mediante WhatsApp, Telegram o redes sociales
-                    para que llegue al mayor número posible de vecinos.
+                    Difunde esta iniciativa mediante WhatsApp,
+                    Telegram o redes sociales para llegar al mayor
+                    número posible de vecinos.
 
                 </p>
 
@@ -641,7 +766,8 @@
 
             <article class="card">
 
-                <div class="card-icono">
+                <div class="card-icono"
+                     aria-hidden="true">
 
                     👨‍👩‍👧‍👦
 
@@ -655,8 +781,8 @@
 
                 <p>
 
-                    Habla de la iniciativa con familiares, amigos y comunidades
-                    de propietarios para conseguir una mayor participación.
+                    Comunica la existencia de esta campaña a familiares,
+                    amigos, comunidades de propietarios y comercios.
 
                 </p>
 
@@ -664,7 +790,8 @@
 
             <article class="card">
 
-                <div class="card-icono">
+                <div class="card-icono"
+                     aria-hidden="true">
 
                     🤝
 
@@ -678,8 +805,8 @@
 
                 <p>
 
-                    El objetivo es mejorar la calidad de vida de todos los vecinos
-                    mediante una propuesta respetuosa y constructiva.
+                    Toda colaboración responsable contribuye a reforzar
+                    una propuesta ciudadana respetuosa y constructiva.
 
                 </p>
 
@@ -690,17 +817,21 @@
     </div>
 
 </section>
-
 <!-- =====================================================
      FORMULARIO
 ===================================================== -->
 
 <section id="firmar"
-         class="seccion seccion-gris">
+         class="seccion seccion-gris"
+         aria-labelledby="firmar-titulo">
 
     <div class="contenedor">
 
         <div class="formulario-layout">
+
+            <!-- ======================================
+                 INFORMACIÓN
+            ======================================= -->
 
             <div class="formulario-texto">
 
@@ -710,7 +841,7 @@
 
                 </span>
 
-                <h2>
+                <h2 id="firmar-titulo">
 
                     Apoya esta iniciativa vecinal
 
@@ -719,11 +850,10 @@
                 <p>
 
                     La participación es completamente gratuita.
-
-                    Los datos facilitados serán utilizados únicamente para
-                    gestionar esta campaña y elaborar el listado de apoyos que,
-                    en su caso, acompañará al escrito presentado ante el
-                    Ayuntamiento.
+                    Los datos facilitados serán utilizados únicamente
+                    para gestionar esta campaña y elaborar el listado de
+                    apoyos que, en su caso, acompañará al escrito
+                    presentado ante el Ayuntamiento.
 
                 </p>
 
@@ -749,7 +879,8 @@
 
                     <li>
 
-                        ✔ Podrás solicitar su eliminación cuando lo desees.
+                        ✔ Podrás solicitar la eliminación de tus datos
+                        cuando lo desees.
 
                     </li>
 
@@ -757,22 +888,21 @@
 
             </div>
 
+            <!-- ======================================
+                 GOOGLE FORM
+            ======================================= -->
+
             <div class="formulario">
 
-                <!-- Sustituir por el enlace definitivo de Google Forms -->
-
                 <iframe
-
                     src="https://docs.google.com/forms/d/e/1FAIpQLSduJDFTlnHiCoaLAi4SrYSc_vCyiK5V6H1DhOYdGAchyrQfNA/viewform?usp=dialog"
-    		    title="Formulario de apoyo"
-		    width="100%"
-		    height="1200"
-		    frameborder="0"
-		    marginheight="0"
-		    marginwidth="0"
-		    loading="lazy"
-		    referrerpolicy="strict-origin-when-cross-origin">
-		    Cargando…
+                    title="Formulario de apoyo a la iniciativa Lucena sin Cucarachas"
+                    width="100%"
+                    height="1200"
+                    loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin">
+
+                    Cargando formulario…
 
                 </iframe>
 
@@ -789,7 +919,8 @@
 ===================================================== -->
 
 <section id="estado"
-         class="seccion">
+         class="seccion"
+         aria-labelledby="estado-titulo">
 
     <div class="contenedor">
 
@@ -801,7 +932,7 @@
 
             </span>
 
-            <h2>
+            <h2 id="estado-titulo">
 
                 Estado de la iniciativa
 
@@ -809,8 +940,9 @@
 
             <p>
 
-                La evolución de esta campaña será pública para que cualquier
-                vecino pueda conocer en qué fase se encuentra.
+                La evolución de la campaña permanecerá disponible para
+                que cualquier vecino pueda conocer la fase en la que se
+                encuentra la iniciativa.
 
             </p>
 
@@ -820,7 +952,8 @@
 
             <article class="timeline-item completado">
 
-                <div class="timeline-punto"></div>
+                <div class="timeline-punto"
+                     aria-hidden="true"></div>
 
                 <div>
 
@@ -832,7 +965,8 @@
 
                     <p>
 
-                        Publicación de la plataforma y apertura del formulario.
+                        Publicación de la plataforma y apertura del
+                        formulario de apoyo.
 
                     </p>
 
@@ -842,7 +976,8 @@
 
             <article class="timeline-item activo">
 
-                <div class="timeline-punto"></div>
+                <div class="timeline-punto"
+                     aria-hidden="true"></div>
 
                 <div>
 
@@ -854,7 +989,7 @@
 
                     <p>
 
-                        Fase actual.
+                        Fase actualmente en desarrollo.
 
                     </p>
 
@@ -864,7 +999,8 @@
 
             <article class="timeline-item">
 
-                <div class="timeline-punto"></div>
+                <div class="timeline-punto"
+                     aria-hidden="true"></div>
 
                 <div>
 
@@ -876,7 +1012,8 @@
 
                     <p>
 
-                        El escrito será presentado junto con los apoyos obtenidos.
+                        El escrito será presentado junto con los apoyos
+                        ciudadanos recopilados.
 
                     </p>
 
@@ -886,7 +1023,8 @@
 
             <article class="timeline-item">
 
-                <div class="timeline-punto"></div>
+                <div class="timeline-punto"
+                     aria-hidden="true"></div>
 
                 <div>
 
@@ -898,7 +1036,8 @@
 
                     <p>
 
-                        Se publicará cualquier contestación oficial recibida.
+                        La respuesta oficial será publicada en esta
+                        página para conocimiento de todos los vecinos.
 
                     </p>
 
@@ -916,7 +1055,8 @@
 ===================================================== -->
 
 <section id="documentacion"
-         class="seccion seccion-documentos">
+         class="seccion seccion-documentos"
+         aria-labelledby="documentacion-titulo">
 
     <div class="contenedor">
 
@@ -928,7 +1068,7 @@
 
             </span>
 
-            <h2>
+            <h2 id="documentacion-titulo">
 
                 Toda la documentación de la iniciativa
 
@@ -936,9 +1076,9 @@
 
             <p>
 
-                La transparencia es uno de los pilares de esta iniciativa.
-                Toda la documentación importante estará disponible para cualquier
-                ciudadano.
+                La transparencia constituye uno de los principios
+                fundamentales de esta iniciativa. Toda la documentación
+                relevante estará disponible para cualquier ciudadano.
 
             </p>
 
@@ -946,12 +1086,14 @@
 
         <div class="documentos-grid">
 
-            <a href="docs/escrito.pdf"
-               class="documento-card"
-               target="_blank"
-               rel="noopener">
+            <!-- ======================================
+                 ESCRITO
+            ======================================= -->
 
-                <div class="documento-icono">
+            <article class="documento-card">
+
+                <div class="documento-icono"
+                     aria-hidden="true">
 
                     📄
 
@@ -965,16 +1107,29 @@
 
                 <p>
 
-                    Consulta el documento que será presentado oficialmente.
+                    Consulta el documento que será presentado
+                    oficialmente ante el Ayuntamiento.
 
                 </p>
 
-            </a>
+                <a href="docs/escrito.pdf"
+                   target="_blank"
+                   rel="noopener noreferrer">
 
-            <a href="docs/privacidad.pdf"
-               class="documento-card">
+                    Abrir documento
 
-                <div class="documento-icono">
+                </a>
+
+            </article>
+
+            <!-- ======================================
+                 PRIVACIDAD
+            ======================================= -->
+
+            <article class="documento-card">
+
+                <div class="documento-icono"
+                     aria-hidden="true">
 
                     🔒
 
@@ -988,16 +1143,27 @@
 
                 <p>
 
-                    Cómo se gestionan los datos personales recogidos.
+                    Información sobre el tratamiento de los datos
+                    personales recogidos durante la campaña.
 
                 </p>
 
-            </a>
+                <a href="#privacidad">
 
-            <a href="#faq"
-               class="documento-card">
+                    Consultar información
 
-                <div class="documento-icono">
+                </a>
+
+            </article>
+
+            <!-- ======================================
+                 FAQ
+            ======================================= -->
+
+            <article class="documento-card">
+
+                <div class="documento-icono"
+                     aria-hidden="true">
 
                     ❓
 
@@ -1011,16 +1177,27 @@
 
                 <p>
 
-                    Resuelve las dudas más habituales sobre la campaña.
+                    Respuestas a las dudas más habituales sobre la
+                    iniciativa.
 
                 </p>
 
-            </a>
+                <a href="#faq">
 
-            <a href="#estado"
-               class="documento-card">
+                    Ver preguntas
 
-                <div class="documento-icono">
+                </a>
+
+            </article>
+
+            <!-- ======================================
+                 SEGUIMIENTO
+            ======================================= -->
+
+            <article class="documento-card">
+
+                <div class="documento-icono"
+                     aria-hidden="true">
 
                     📊
 
@@ -1028,17 +1205,24 @@
 
                 <h3>
 
-                    Evolución
+                    Estado de la campaña
 
                 </h3>
 
                 <p>
 
-                    Consulta el estado actualizado de la iniciativa.
+                    Consulta la evolución de la iniciativa y las
+                    próximas actuaciones previstas.
 
                 </p>
 
-            </a>
+                <a href="#estado">
+
+                    Ver seguimiento
+
+                </a>
+
+            </article>
 
         </div>
 
@@ -1051,7 +1235,8 @@
 ===================================================== -->
 
 <section id="faq"
-         class="seccion seccion-verde">
+         class="seccion seccion-verde"
+         aria-labelledby="faq-titulo">
 
     <div class="contenedor">
 
@@ -1063,7 +1248,7 @@
 
             </span>
 
-            <h2>
+            <h2 id="faq-titulo">
 
                 Resolvemos tus dudas
 
@@ -1083,8 +1268,9 @@
 
                 <p>
 
-                    Es una iniciativa ciudadana independiente promovida por
-                    vecinos de Lucena.
+                    Es una iniciativa ciudadana independiente promovida
+                    por vecinos de Lucena sin vinculación con partidos
+                    políticos u organizaciones.
 
                 </p>
 
@@ -1100,7 +1286,8 @@
 
                 <p>
 
-                    No. No representa a ningún partido político ni asociación.
+                    No. La iniciativa es completamente independiente y
+                    persigue únicamente trasladar una petición vecinal.
 
                 </p>
 
@@ -1116,8 +1303,9 @@
 
                 <p>
 
-                    Únicamente se utilizarán para gestionar esta campaña y los
-                    apoyos obtenidos.
+                    Los datos facilitados únicamente serán utilizados
+                    para gestionar la campaña y la relación de apoyos
+                    obtenidos.
 
                 </p>
 
@@ -1127,15 +1315,14 @@
 
                 <summary>
 
-                    ¿Se publicarán mis datos?
+                    ¿Se publicarán mis datos personales?
 
                 </summary>
 
                 <p>
 
-                    No.
-
-                    Los datos personales no serán publicados.
+                    No. Los datos personales no serán publicados ni
+                    utilizados para fines distintos a los informados.
 
                 </p>
 
@@ -1151,10 +1338,8 @@
 
                 <p>
 
-                    Sí.
-
-                    Podrás solicitar la eliminación de tus datos en cualquier
-                    momento.
+                    Sí. Podrás solicitar la eliminación de tus datos en
+                    cualquier momento.
 
                 </p>
 
@@ -1164,14 +1349,15 @@
 
                 <summary>
 
-                    ¿Cómo conoceré la respuesta del Ayuntamiento?
+                    ¿Dónde se publicará la respuesta oficial?
 
                 </summary>
 
                 <p>
 
-                    Se publicará en esta misma página cuando exista una
-                    contestación oficial.
+                    Cualquier respuesta institucional recibida será
+                    publicada en esta misma página para garantizar la
+                    máxima transparencia.
 
                 </p>
 
@@ -1182,19 +1368,23 @@
     </div>
 
 </section>
-
 <!-- =====================================================
      CONTACTO
 ===================================================== -->
 
 <section id="contacto"
-         class="seccion">
+         class="seccion"
+         aria-labelledby="contacto-titulo">
 
     <div class="contenedor">
 
         <div class="contacto-grid">
 
-            <div>
+            <!-- ======================================
+                 INFORMACIÓN
+            ======================================= -->
+
+            <section>
 
                 <span>
 
@@ -1202,7 +1392,7 @@
 
                 </span>
 
-                <h2>
+                <h2 id="contacto-titulo">
 
                     ¿Necesitas contactar con nosotros?
 
@@ -1210,13 +1400,19 @@
 
                 <p>
 
-                    Si deseas realizar una consulta, comunicar una incidencia o
-                    ejercer tus derechos sobre protección de datos, puedes hacerlo
-                    mediante el siguiente correo electrónico.
+                    Si deseas realizar una consulta, aportar información,
+                    comunicar incidencias o ejercer cualquiera de tus
+                    derechos relacionados con la protección de datos,
+                    puedes escribirnos mediante el siguiente correo
+                    electrónico.
 
                 </p>
 
-            </div>
+            </section>
+
+            <!-- ======================================
+                 TARJETA
+            ======================================= -->
 
             <aside class="contacto-card">
 
@@ -1243,7 +1439,12 @@
                 <p>
 
                     Promotor de la iniciativa
-                    <strong>Lucena sin Cucarachas</strong>
+
+                    <strong>
+
+                        Lucena sin Cucarachas
+
+                    </strong>
 
                 </p>
 
@@ -1254,12 +1455,14 @@
     </div>
 
 </section>
+
 <!-- =====================================================
-     AVISO LEGAL Y PRIVACIDAD
+     PRIVACIDAD
 ===================================================== -->
 
 <section id="privacidad"
-         class="seccion seccion-clara">
+         class="seccion seccion-clara"
+         aria-labelledby="privacidad-titulo">
 
     <div class="contenedor">
 
@@ -1271,7 +1474,7 @@
 
             </span>
 
-            <h2>
+            <h2 id="privacidad-titulo">
 
                 Compromiso con la protección de tus datos
 
@@ -1280,9 +1483,8 @@
             <p>
 
                 Esta iniciativa cumple con el Reglamento (UE) 2016/679
-                (Reglamento General de Protección de Datos - RGPD) y con la
-                Ley Orgánica 3/2018 de Protección de Datos Personales y garantía
-                de los derechos digitales.
+                (RGPD) y con la Ley Orgánica 3/2018 de Protección de
+                Datos Personales y garantía de los derechos digitales.
 
             </p>
 
@@ -1300,9 +1502,9 @@
 
                 <p>
 
-                    Gestionar la recogida de apoyos de esta iniciativa vecinal y,
-                    en su caso, acompañar el escrito que será presentado ante el
-                    Ayuntamiento de Lucena.
+                    Gestionar los apoyos ciudadanos y acompañar, en su
+                    caso, el escrito presentado ante el Ayuntamiento de
+                    Lucena.
 
                 </p>
 
@@ -1319,8 +1521,7 @@
                 <p>
 
                     El responsable del tratamiento será el promotor de la
-                    iniciativa "Lucena sin Cucarachas", cuyos datos completos
-                    figurarán en la Política de Privacidad.
+                    iniciativa "Lucena sin Cucarachas".
 
                 </p>
 
@@ -1337,8 +1538,7 @@
                 <p>
 
                     Los datos se conservarán únicamente durante el tiempo
-                    necesario para gestionar la iniciativa y atender las posibles
-                    obligaciones legales derivadas de la misma.
+                    imprescindible para gestionar esta iniciativa.
 
                 </p>
 
@@ -1354,9 +1554,8 @@
 
                 <p>
 
-                    Los datos no serán cedidos a terceros salvo obligación legal
-                    o cuando resulte imprescindible para la finalidad informada
-                    al participante.
+                    Los datos no serán cedidos a terceros salvo obligación
+                    legal o consentimiento expreso del interesado.
 
                 </p>
 
@@ -1369,16 +1568,17 @@
 </section>
 
 <!-- =====================================================
-     LLAMADA FINAL
+     CTA FINAL
 ===================================================== -->
 
-<section class="cta">
+<section class="cta"
+         aria-labelledby="cta-titulo">
 
     <div class="contenedor">
 
         <div class="cta-box">
 
-            <h2>
+            <h2 id="cta-titulo">
 
                 Tu apoyo puede marcar la diferencia
 
@@ -1386,100 +1586,76 @@
 
             <p>
 
-                Cuantos más vecinos participen, mayor representatividad tendrá la
-                petición presentada al Ayuntamiento.
+                Cuantos más vecinos participen, mayor fuerza tendrá la
+                solicitud presentada ante el Ayuntamiento.
 
             </p>
 
             <div class="cta-botones compartir-redes">
 
-    <a href="#firmar"
-       class="btn btn-principal">
+                <a href="#firmar"
+                   class="btn btn-principal">
 
-        ✍️ Firmar ahora
+                    ✍️ Firmar ahora
 
-    </a>
+                </a>
 
-    <button type="button"
-            class="btn btn-secundario btn-icono"
-            onclick="compartirWhatsApp()">
+                <button type="button"
+                        class="btn btn-secundario btn-icono"
+                        onclick="compartirWhatsApp()">
 
-        <svg viewBox="0 0 32 32" aria-hidden="true">
-            <path fill="currentColor" d="M16 3C8.8 3 3 8.7 3 15.8c0 2.5.7 4.9 2.1 7L3 29l6.4-2c2 1.1 4.2 1.7 6.6 1.7 7.2 0 13-5.7 13-12.9S23.2 3 16 3zm7.6 18.2c-.3.8-1.8 1.5-2.5 1.6-.6.1-1.3.2-4.3-1-3.7-1.6-6.1-5.3-6.3-5.5-.2-.3-1.5-2-.9-3.8.3-.9 1-1.4 1.3-1.6.3-.2.6-.2.8-.2h.6c.2 0 .5 0 .7.5.3.7 1 2.3 1.1 2.5.1.2.1.4 0 .6-.1.2-.2.4-.4.6l-.5.6c-.2.2-.3.4-.1.7.2.3.8 1.3 1.8 2.1 1.2 1 2.1 1.3 2.5 1.5.3.1.5.1.7-.1.2-.2.8-.9 1-.1.2.3.5.3.8.2.3-.1 1.8-.8 2.1-1 .3-.2.5-.3.6-.5.1-.2.1-1-.2-1.8z"/>
-        </svg>
+                    WhatsApp
 
-        <span>WhatsApp</span>
+                </button>
 
-    </button>
+                <button type="button"
+                        class="btn btn-secundario btn-icono"
+                        onclick="compartirFacebook()">
 
-    <button type="button"
-            class="btn btn-secundario btn-icono"
-            onclick="compartirFacebook()">
+                    Facebook
 
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path fill="currentColor" d="M22 12A10 10 0 1 0 10.4 21.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.5V12h2.7l-.4 2.9h-2.3v7A10 10 0 0 0 22 12"/>
-        </svg>
+                </button>
 
-        <span>Facebook</span>
+                <button type="button"
+                        class="btn btn-secundario btn-icono"
+                        onclick="compartirTelegram()">
 
-    </button>
+                    Telegram
 
-    <button type="button"
-            class="btn btn-secundario btn-icono"
-            onclick="compartirTelegram()">
+                </button>
 
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path fill="currentColor" d="M9.9 15.6 9.5 20c.6 0 .8-.3 1.1-.6l2.6-2.5 5.4 4c1 .5 1.7.2 2-.9L24 4.2c.4-1.7-.6-2.4-1.6-2L1.6 10.3c-1.6.6-1.6 1.5-.3 1.9l5.3 1.7L19 6.2c.6-.4 1.2-.2.7.3"/>
-        </svg>
+                <button type="button"
+                        class="btn btn-secundario btn-icono"
+                        onclick="compartirX()">
 
-        <span>Telegram</span>
+                    X
 
-    </button>
+                </button>
 
-    <button type="button"
-            class="btn btn-secundario btn-icono"
-            onclick="compartirX()">
+                <button type="button"
+                        class="btn btn-secundario btn-icono"
+                        onclick="copiarEnlace()">
 
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path fill="currentColor" d="M18.9 2H22l-6.8 7.8L23 22h-6.1l-4.8-6.3L6.6 22H3.5l7.2-8.2L1 2h6.3l4.3 5.7z"/>
-        </svg>
+                    Copiar enlace
 
-        <span>X</span>
+                </button>
 
-    </button>
+                <button type="button"
+                        class="btn btn-secundario btn-icono"
+                        onclick="compartir()">
 
-    <button type="button"
-            class="btn btn-secundario btn-icono"
-            onclick="copiarEnlace()">
+                    Compartir
 
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path fill="currentColor" d="M3.9 12a5 5 0 0 1 5-5h3v2h-3a3 3 0 0 0 0 6h3v2h-3a5 5 0 0 1-5-5zm7.1 1h2v-2h-2zm4.1-6h-3v2h3a3 3 0 0 1 0 6h-3v2h3a5 5 0 0 0 0-10z"/>
-        </svg>
+                </button>
 
-        <span>Copiar enlace</span>
+                <a href="#inicio"
+                   class="btn btn-secundario">
 
-    </button>
+                    ↑ Volver arriba
 
-    <button type="button"
-            class="btn btn-secundario btn-icono"
-            onclick="compartir()">
+                </a>
 
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path fill="currentColor" d="M18 16a3 3 0 0 0-2.4 1.2l-6.4-3.2a3.2 3.2 0 0 0 0-2l6.4-3.2A3 3 0 1 0 15 7a2.7 2.7 0 0 0 .1.7L8.7 10.9a3 3 0 1 0 0 2.2l6.4 3.2a2.7 2.7 0 0 0-.1.7 3 3 0 1 0 3-3z"/>
-        </svg>
-
-        <span>Compartir</span>
-
-    </button>
-
-    <a href="#inicio"
-       class="btn btn-secundario">
-
-        ⬆️ Volver arriba
-
-    </a>
-
-</div>
+            </div>
 
         </div>
 
@@ -1501,9 +1677,14 @@
 
             <section>
 
-                <img src="assets/logo/logo.svg"
-                     alt="Lucena sin Cucarachas"
-                     class="footer-logo">
+                <img
+                    src="assets/logo/logo.svg"
+                    alt="Logotipo Lucena sin Cucarachas"
+                    class="footer-logo"
+                    width="70"
+                    height="70"
+                    loading="lazy"
+                    decoding="async">
 
                 <h3>
 
@@ -1513,14 +1694,14 @@
 
                 <p>
 
-                    Iniciativa ciudadana para impulsar un Plan Integral de
-                    Control de Plagas en Lucena.
+                    Iniciativa ciudadana para impulsar un Plan Integral
+                    de Control de Plagas en Lucena.
 
                 </p>
 
             </section>
 
-            <section>
+            <nav aria-label="Navegación del pie">
 
                 <h4>
 
@@ -1537,7 +1718,7 @@
 
                 </ul>
 
-            </section>
+            </nav>
 
             <section>
 
@@ -1549,41 +1730,15 @@
 
                 <ul>
 
-                    <li>
-
-                        <a href="docs/escrito.pdf">
-
-                            Escrito
-
-                        </a>
-
-                    </li>
-
-                    <li>
-
-                        <a href="privacidad.html">
-
-                            Política de privacidad
-
-                        </a>
-
-                    </li>
-
-                    <li>
-
-                        <a href="#faq">
-
-                            Preguntas frecuentes
-
-                        </a>
-
-                    </li>
+                    <li><a href="docs/escrito.pdf">Escrito</a></li>
+                    <li><a href="#privacidad">Privacidad</a></li>
+                    <li><a href="#faq">FAQ</a></li>
 
                 </ul>
 
             </section>
 
-            <section>
+            <address>
 
                 <h4>
 
@@ -1599,11 +1754,11 @@
 
                 <p>
 
-                    Lucena (Córdoba)
+                    Lucena · Córdoba · España
 
                 </p>
 
-            </section>
+            </address>
 
         </div>
 
@@ -1611,7 +1766,10 @@
 
             <p>
 
-                © <span id="anio"></span> Lucena sin Cucarachas.
+                © <span id="anio"></span>
+
+                Lucena sin Cucarachas.
+
                 Todos los derechos reservados.
 
             </p>
@@ -1619,6 +1777,7 @@
             <p>
 
                 Última actualización:
+
                 <span id="fecha-actualizacion">
 
                     Julio 2026
@@ -1637,10 +1796,10 @@
      JAVASCRIPT
 ===================================================== -->
 
-<script src="js/menu.js"></script>
-<script src="js/contador.js"></script>
-<script src="js/compartir.js"></script>
-<script src="js/animaciones.js"></script>
+<script src="js/menu.js" defer></script>
+<script src="js/contador.js" defer></script>
+<script src="js/compartir.js" defer></script>
+<script src="js/animaciones.js" defer></script>
 
 <script>
 

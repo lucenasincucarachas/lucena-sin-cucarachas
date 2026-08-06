@@ -1777,7 +1777,7 @@ nav a.activo::after{
 }
 
 /*=========================================================
-    FAQ
+    FAQ PREMIUM
 =========================================================*/
 
 .faq{
@@ -1790,47 +1790,64 @@ nav a.activo::after{
 
 .faq details{
 
-    background:#fff;
+    background:#ffffff;
 
-    border-radius:20px;
+    border:1px solid rgba(255,255,255,.15);
 
-    border:1px solid transparent;
+    border-radius:22px;
 
     margin-bottom:22px;
 
     overflow:hidden;
 
-    box-shadow:0 10px 25px rgba(0,0,0,.05);
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.08);
 
-    transition:.30s;
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        border-color .25s ease;
 
 }
 
 .faq details:hover{
 
-    box-shadow:0 18px 35px rgba(0,0,0,.08);
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.12);
 
 }
 
 .faq details[open]{
 
-    border-color:rgba(22,92,58,.18);
+    border-color:rgba(22,92,58,.20);
 
 }
 
 .faq summary{
 
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:28px 32px;
+
     cursor:pointer;
 
     list-style:none;
 
-    padding:30px 34px;
-
-    font-size:1.1rem;
+    font-size:1.08rem;
 
     font-weight:700;
 
-    position:relative;
+    color:var(--gris-900);
+
+    background:#ffffff;
+
+    user-select:none;
 
 }
 
@@ -1844,35 +1861,49 @@ nav a.activo::after{
 
     content:"+";
 
-    position:absolute;
+    width:34px;
 
-    right:30px;
+    height:34px;
 
-    top:50%;
+    border-radius:50%;
 
-    transform:translateY(-50%);
+    display:flex;
 
-    font-size:1.8rem;
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(22,92,58,.08);
 
     color:var(--verde-800);
 
-    transition:.30s;
+    font-size:1.4rem;
+
+    font-weight:700;
+
+    flex-shrink:0;
+
+    transition:.25s;
 
 }
 
 .faq details[open] summary::after{
 
-    transform:translateY(-50%) rotate(45deg);
+    transform:rotate(45deg);
 
 }
 
 .faq p{
 
-    padding:0 34px 32px;
+    margin:0;
 
-    line-height:1.9;
+    padding:0 32px 28px;
 
     color:var(--gris-700);
+
+    line-height:1.8;
+
+    background:#ffffff;
 
 }
 

@@ -1,0 +1,574 @@
+/* =========================================================
+LUCENA SIN CUCARACHAS
+Responsive
+========================================================= */
+
+/* =========================================================
+TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+
+:root {
+    --altura-header: 68px;
+}
+
+
+/* -----------------------------------------------------
+   CONTENEDOR
+   ----------------------------------------------------- */
+
+.contenedor {
+    width: min(
+        calc(100% - 2rem),
+        var(--ancho-contenedor)
+    );
+}
+
+
+/* -----------------------------------------------------
+   NAVEGACIÓN
+   ----------------------------------------------------- */
+
+.menu-toggle {
+    display: block;
+}
+
+.menu {
+    position: absolute;
+
+    top: calc(100% + 1px);
+    left: 0;
+    right: 0;
+
+    display: none;
+
+    flex-direction: column;
+    align-items: stretch;
+
+    gap: 0;
+
+    padding: 0.5rem;
+
+    background: var(--color-blanco);
+
+    border-bottom:
+        1px solid var(--color-borde);
+
+    box-shadow: var(--sombra-media);
+}
+
+.menu.is-open {
+    display: flex;
+}
+
+.menu a {
+    justify-content: flex-start;
+
+    min-height: 46px;
+
+    padding-inline: 0.85rem;
+}
+
+.menu .menu-cta {
+    margin: 0.25rem 0 0;
+
+    justify-content: center;
+}
+
+
+/* -----------------------------------------------------
+   HERO
+   ----------------------------------------------------- */
+
+.hero {
+    padding-block:
+        var(--espacio-8)
+        var(--espacio-7);
+}
+
+.hero-grid {
+    grid-template-columns:
+        minmax(0, 1fr);
+
+    gap: var(--espacio-6);
+}
+
+.hero-contenido {
+    max-width: 720px;
+}
+
+.hero-imagen {
+    max-width: 620px;
+}
+
+.hero-imagen img {
+    min-height: 280px;
+
+    max-height: 420px;
+}
+
+
+/* -----------------------------------------------------
+   COMPARTIR
+   ----------------------------------------------------- */
+
+.compartir-inner {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: var(--espacio-4);
+
+    padding-block: var(--espacio-5);
+}
+
+
+/* -----------------------------------------------------
+   INFORMACIÓN
+   ----------------------------------------------------- */
+
+.info-grid {
+    grid-template-columns:
+        minmax(0, 1fr);
+}
+
+.info-item {
+    padding:
+        var(--espacio-4)
+        0;
+}
+
+.info-item + .info-item {
+    padding-left: 0;
+
+    border-left: 0;
+}
+
+
+/* -----------------------------------------------------
+   PROPUESTA
+   ----------------------------------------------------- */
+
+.propuesta-lista {
+    grid-template-columns:
+        minmax(0, 1fr);
+}
+
+
+/* -----------------------------------------------------
+   CTA FINAL
+   ----------------------------------------------------- */
+
+.cta-final-inner {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: var(--espacio-5);
+}
+
+
+/* -----------------------------------------------------
+   FOOTER
+   ----------------------------------------------------- */
+
+.footer-main {
+    grid-template-columns:
+        minmax(0, 1fr);
+}
+
+
+}
+
+/* =========================================================
+MÓVIL
+========================================================= */
+
+@media (max-width: 600px) {
+
+
+:root {
+    --altura-header: 64px;
+}
+
+
+/* -----------------------------------------------------
+   CONTENEDOR
+   ----------------------------------------------------- */
+
+.contenedor {
+    width: min(
+        calc(100% - 1.25rem),
+        var(--ancho-contenedor)
+    );
+}
+
+
+/* -----------------------------------------------------
+   HEADER
+   ----------------------------------------------------- */
+
+.header-inner {
+    min-height: var(--altura-header);
+}
+
+.marca img {
+    width: 40px;
+    height: 40px;
+}
+
+.marca-texto strong {
+    font-size: 0.8rem;
+}
+
+.marca-texto small {
+    font-size: 0.68rem;
+}
+
+
+/* -----------------------------------------------------
+   HERO
+   ----------------------------------------------------- */
+
+.hero {
+    padding:
+        var(--espacio-6)
+        0
+        var(--espacio-5);
+}
+
+h1 {
+    font-size: clamp(
+        2rem,
+        10vw,
+        2.65rem
+    );
+
+    letter-spacing: -0.04em;
+}
+
+h2 {
+    font-size: 1.55rem;
+}
+
+.hero-intro {
+    margin-bottom: var(--espacio-4);
+
+    font-size: 1rem;
+
+    line-height: 1.6;
+}
+
+.hero-actions {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr);
+
+    gap: var(--espacio-2);
+
+    margin-bottom: var(--espacio-4);
+}
+
+.hero-actions .btn {
+    width: 100%;
+}
+
+.hero-stats {
+    gap: var(--espacio-4);
+}
+
+.stat strong {
+    font-size: 1.5rem;
+}
+
+.hero-imagen {
+    border-radius: var(--radio-md);
+}
+
+.hero-imagen img {
+    min-height: 210px;
+
+    max-height: 300px;
+}
+
+
+/* -----------------------------------------------------
+   COMPARTIR
+   ----------------------------------------------------- */
+
+.compartir-inner {
+    padding-block: var(--espacio-4);
+}
+
+.compartir h2 {
+    font-size: 1.15rem;
+}
+
+.compartir-actions {
+    width: 100%;
+}
+
+.share-btn {
+    flex: 1 1 auto;
+
+    min-width: 0;
+}
+
+
+/* -----------------------------------------------------
+   SECCIONES
+   ----------------------------------------------------- */
+
+.seccion {
+    padding-block: var(--espacio-8);
+}
+
+.seccion-compacta {
+    padding-block: var(--espacio-2);
+}
+
+
+/* -----------------------------------------------------
+   DESPLEGABLES
+   ----------------------------------------------------- */
+
+.bloque-desplegable > summary {
+    min-height: 58px;
+
+    padding:
+        0.65rem
+        0.85rem;
+
+    font-size: var(--texto-base);
+}
+
+.desplegable-contenido {
+    padding:
+        var(--espacio-5)
+        var(--espacio-4)
+        var(--espacio-6);
+}
+
+.desplegable-intro {
+    margin-bottom: var(--espacio-5);
+}
+
+
+/* -----------------------------------------------------
+   INFORMACIÓN
+   ----------------------------------------------------- */
+
+.info-item {
+    grid-template-columns:
+        34px
+        minmax(0, 1fr);
+
+    gap: var(--espacio-3);
+}
+
+.info-item p {
+    font-size: var(--texto-sm);
+}
+
+
+/* -----------------------------------------------------
+   PROPUESTA
+   ----------------------------------------------------- */
+
+.propuesta-item {
+    grid-template-columns:
+        38px
+        minmax(0, 1fr);
+
+    gap: var(--espacio-3);
+
+    padding-block: var(--espacio-4);
+}
+
+.propuesta-num {
+    width: 32px;
+    height: 32px;
+}
+
+
+/* -----------------------------------------------------
+   APOYAR
+   ----------------------------------------------------- */
+
+.apoyar {
+    padding-block:
+        var(--espacio-8)
+        var(--espacio-10);
+}
+
+.apoyar-aviso {
+    padding:
+        var(--espacio-3)
+        var(--espacio-4);
+}
+
+.formulario {
+    margin-inline: -0.15rem;
+}
+
+.formulario iframe {
+    min-height: 1050px;
+}
+
+
+/* -----------------------------------------------------
+   DOCUMENTACIÓN
+   ----------------------------------------------------- */
+
+.documento {
+    grid-template-columns:
+        auto
+        minmax(0, 1fr)
+        auto;
+
+    gap: var(--espacio-3);
+
+    padding: var(--espacio-3);
+}
+
+.documento-texto small {
+    display: none;
+}
+
+
+/* -----------------------------------------------------
+   FAQ
+   ----------------------------------------------------- */
+
+.faq-item > summary {
+    padding-block: var(--espacio-3);
+}
+
+
+/* -----------------------------------------------------
+   CTA FINAL
+   ----------------------------------------------------- */
+
+.cta-final {
+    padding-block: var(--espacio-6);
+}
+
+.cta-final-actions {
+    width: 100%;
+}
+
+.cta-final-actions .btn {
+    flex: 1 1 auto;
+}
+
+
+/* -----------------------------------------------------
+   FOOTER
+   ----------------------------------------------------- */
+
+.footer-main {
+    gap: var(--espacio-6);
+
+    padding-block: var(--espacio-6);
+}
+
+.footer-bottom {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: var(--espacio-2);
+}
+
+
+}
+
+/* =========================================================
+MÓVILES MUY PEQUEÑOS
+========================================================= */
+
+@media (max-width: 380px) {
+
+
+.contenedor {
+    width: min(
+        calc(100% - 1rem),
+        var(--ancho-contenedor)
+    );
+}
+
+.marca-texto {
+    display: none;
+}
+
+.hero-stats {
+    gap: var(--espacio-3);
+}
+
+.stat strong {
+    font-size: 1.35rem;
+}
+
+.compartir-actions {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr);
+}
+
+.share-btn {
+    width: 100%;
+}
+
+.documento {
+    grid-template-columns:
+        auto
+        minmax(0, 1fr);
+}
+
+.documento-flecha {
+    display: none;
+}
+
+
+}
+
+/* =========================================================
+PANTALLAS CON POCA ALTURA
+========================================================= */
+
+@media (max-height: 700px) and (min-width: 901px) {
+
+
+.hero {
+    padding-block:
+        var(--espacio-6)
+        var(--espacio-5);
+}
+
+.hero-imagen img {
+    min-height: 280px;
+    max-height: 420px;
+}
+
+
+}
+
+/* =========================================================
+REDUCCIÓN DE MOVIMIENTO
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+
+.menu,
+.bloque-desplegable,
+.faq-item {
+    scroll-behavior: auto;
+}
+
+
+}

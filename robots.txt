@@ -1,0 +1,8 @@
+# Lucena sin Cucarachas
+
+# Directivas para los rastreadores web
+
+User-agent: *
+Allow: /
+
+Sitemap: https://lucenasincucarachas.github.io/lucena-sin-cucarachas/sitemap.xml

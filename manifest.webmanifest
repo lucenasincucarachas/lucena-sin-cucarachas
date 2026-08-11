@@ -1,0 +1,27 @@
+{
+  "name": "Lucena sin Cucarachas",
+  "short_name": "Lucena sin Cucarachas",
+  "description": "Iniciativa vecinal para solicitar un sistema de prevención, seguimiento y control de plagas en Lucena.",
+  "lang": "es-ES",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#165C3A",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/icons/favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

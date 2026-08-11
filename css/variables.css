@@ -1,0 +1,221 @@
+/* =========================================================
+LUCENA SIN CUCARACHAS
+Variables globales
+========================================================= */
+
+/* =========================================================
+COLORES
+========================================================= */
+
+:root {
+
+
+/* -----------------------------------------------------
+   Identidad
+   ----------------------------------------------------- */
+
+--color-verde: #165C3A;
+--color-verde-oscuro: #0E4229;
+--color-verde-claro: #EAF2ED;
+
+--color-rojo: #C62828;
+--color-rojo-oscuro: #9E1F1F;
+--color-rojo-claro: #FBEAEA;
+
+
+/* -----------------------------------------------------
+   Neutros
+   ----------------------------------------------------- */
+
+--color-blanco: #FFFFFF;
+
+--color-gris-50: #FAFBFA;
+--color-gris-100: #F3F5F4;
+--color-gris-200: #E1E5E2;
+--color-gris-300: #CDD3CF;
+--color-gris-400: #AEB6B0;
+--color-gris-500: #858E88;
+--color-gris-600: #626A65;
+--color-gris-700: #464E49;
+--color-gris-800: #303732;
+--color-gris-900: #242A26;
+--color-gris-950: #1C211E;
+
+
+/* -----------------------------------------------------
+   Texto
+   ----------------------------------------------------- */
+
+--color-texto: var(--color-gris-900);
+--color-texto-secundario: var(--color-gris-600);
+--color-texto-suave: var(--color-gris-500);
+
+--color-enlace: var(--color-verde);
+--color-enlace-hover: var(--color-verde-oscuro);
+
+
+/* -----------------------------------------------------
+   Fondos
+   ----------------------------------------------------- */
+
+--color-fondo: var(--color-blanco);
+--color-fondo-suave: var(--color-gris-50);
+--color-fondo-seccion: var(--color-gris-100);
+
+
+/* -----------------------------------------------------
+   Bordes
+   ----------------------------------------------------- */
+
+--color-borde: var(--color-gris-200);
+--color-borde-fuerte: var(--color-gris-300);
+
+
+/* -----------------------------------------------------
+   Estados
+   ----------------------------------------------------- */
+
+--color-exito: #237A4B;
+--color-error: #B42318;
+--color-aviso: #8A5A00;
+
+
+/* -----------------------------------------------------
+   WhatsApp
+   ----------------------------------------------------- */
+
+--color-whatsapp: #128C7E;
+--color-whatsapp-hover: #075E54;
+
+
+/* =====================================================
+   TIPOGRAFÍA
+   ===================================================== */
+
+--fuente-base:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+
+--fuente-mono:
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    Monaco,
+    Consolas,
+    "Liberation Mono",
+    monospace;
+
+
+/* -----------------------------------------------------
+   Tamaños de texto
+   ----------------------------------------------------- */
+
+--texto-xs: 0.75rem;
+--texto-sm: 0.875rem;
+--texto-base: 1rem;
+--texto-lg: 1.125rem;
+--texto-xl: 1.25rem;
+--texto-2xl: 1.5rem;
+--texto-3xl: 1.875rem;
+--texto-4xl: 2.25rem;
+--texto-5xl: 3rem;
+
+
+/* -----------------------------------------------------
+   Interlineado
+   ----------------------------------------------------- */
+
+--linea-compacta: 1.15;
+--linea-titulo: 1.2;
+--linea-normal: 1.5;
+--linea-amplia: 1.7;
+
+
+/* =====================================================
+   ESPACIADO
+   ===================================================== */
+
+--espacio-1: 0.25rem;
+--espacio-2: 0.5rem;
+--espacio-3: 0.75rem;
+--espacio-4: 1rem;
+--espacio-5: 1.25rem;
+--espacio-6: 1.5rem;
+--espacio-7: 1.75rem;
+--espacio-8: 2rem;
+--espacio-10: 2.5rem;
+--espacio-12: 3rem;
+--espacio-16: 4rem;
+--espacio-20: 5rem;
+
+
+/* =====================================================
+   LAYOUT
+   ===================================================== */
+
+--ancho-contenedor: 1120px;
+--ancho-texto: 760px;
+
+--altura-header: 72px;
+
+
+/* =====================================================
+   BORDES Y RADIOS
+   ===================================================== */
+
+--radio-xs: 4px;
+--radio-sm: 6px;
+--radio-md: 10px;
+--radio-lg: 14px;
+--radio-xl: 20px;
+
+--radio-redondo: 999px;
+
+
+/* =====================================================
+   SOMBRAS
+   ===================================================== */
+
+--sombra-suave:
+    0 2px 8px rgba(20, 40, 30, 0.06);
+
+--sombra-media:
+    0 8px 24px rgba(20, 40, 30, 0.09);
+
+--sombra-fuerte:
+    0 16px 40px rgba(20, 40, 30, 0.12);
+
+
+/* =====================================================
+   TRANSICIONES
+   ===================================================== */
+
+--transicion-rapida: 150ms ease;
+--transicion-normal: 220ms ease;
+
+
+/* =====================================================
+   CAPAS
+   ===================================================== */
+
+--z-base: 1;
+--z-header: 100;
+--z-menu: 200;
+--z-modal: 500;
+
+
+/* =====================================================
+   ACCESIBILIDAD
+   ===================================================== */
+
+--foco:
+    0 0 0 3px rgba(198, 40, 40, 0.28);
+
+
+}
